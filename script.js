@@ -7,8 +7,7 @@ function secondHighest(arr){
               secondmax = arr[i];
     
    
-  
-}
+  }
   
 }
   return secondmax;
