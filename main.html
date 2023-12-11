@@ -9,18 +9,34 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			//Write your code here
-			
+if(arr.length === 0 || arr.length === 1 || arr[0]===arr[1]) return -Number.MAX.VALUE;
+
+    let max = 0,secondmax=0;
+    for(let i=0;i<arr.length;i++){
+        if(max<arr[i]){
+          
+          max = arr[i];}
+            
+   
+  }
+ 
+     for(let i=0;i<arr.length;i++){
+        if(max>arr[i] && secondmax<arr[i]){
+             
+          secondmax = arr[i];}
+}
+  return secondmax;
+
 		}
 
-		function Main() {
-			var n = prompt("Enter the number of elements");
-			var arr = [];
-			for (var i = 0; i < n; i++) {
-				arr[i] = prompt("Enter element " + (i+1));
-			}
-			alert(secondHighest(arr));
-		}
+		// function Main() {
+		// 	var n = prompt("Enter the number of elements");
+		// 	var arr = [];
+		// 	for (var i = 0; i < n; i++) {
+		// 		arr[i] = prompt("Enter element " + (i+1));
+		// 	}
+		// 	alert(secondHighest(arr));
+		// }
 		Main();
 	</script>
 
